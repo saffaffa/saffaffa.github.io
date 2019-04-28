@@ -1,1 +1,89 @@
-"Hello, World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Luxe Nail Lounge Newbury</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="header-container"> <!-- 100% width -->
+            <div class="masthead">
+
+                <button class="hamburger hamburger--slider" onclick="openNav()" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <nav id="myNav" class="overlay">
+                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                    <button class="hamburger hamburger--slider is-active closebtn" onclick="closeNav()" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <div class="overlay-content">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Treatment</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <header> <!-- 960px -->
+                    <img src="res/logo-white.png" alt="logo">
+                </header>
+            </div>
+        </div>
+
+        <div class="manifesto-section-container">
+            <div class="manifesto-section">
+                <p>Manifesto section</p>
+            </div>
+        </div>
+
+        <div class="treatment-section-container">
+            <div class="treatment-section">
+                <p>Treatment section</p>
+            </div>
+        </div>
+
+        <div class="contact-section-container">
+            <div class="contact">
+
+                <div class="map">
+                    <iframe id='mapcanvas' src='https://maps.google.com/maps?q=%2063a%20Northbrook%20Street%20RG14%201AE%20Newbury,%20Berkshire&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>
+                </div>
+
+                <div class="contact-text">
+                    <div class="contact-header">
+                        <h2>Luxe Nail Lounge Location</h2>
+                    </div>
+                    <p>etc etc</p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="footer-container">
+            <div class="footer">
+                <p>Copyright &copy; Luxe Nail Lounge Newbury</p>
+            </div>
+        </div>
+        
+    </div> <!-- Wrapper End -->
+
+<script src="nav.js"></script>
+</body>
+</html>

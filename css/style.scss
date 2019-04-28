@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+html, body {
+    font-family: "Montserrat";
+}
+html {
+  font-size: 14px;
+}
+body {
+  height: 100%;
+}
+
+button:focus {
+  outline:none !important;
+}
+
+.wrapper {
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: auto auto auto 1fr auto;
+}
+.header-container, .manifesto-section-container, .treatment-section-container, .contact-section-container, .footer-container {
+    width: 100%;
+}
+.masthead, .manifesto-section, .treatment-section, .contact, .footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.header-container {
+  background-color: #0B0C10;
+}
+
+.masthead {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.overlay ul {
+  list-style: none;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+header {
+    text-align: center;
+    // 250px height img
+}
+
+.manifesto-section-container {
+}
+
+.treatment-section-container {
+}
+
+// contact
+.contact-section-container {
+  border: 1px solid black;
+  .contact {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 65% 35%;
+    border: 1px solid black;
+
+    .contact-header {
+      text-align: center;
+    }
+  }
+
+  .map {
+    #mapcanvas {
+      min-height: 250px;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.footer-container {
+  border: 1px solid black;
+  .footer {
+  }
+}
+
+
