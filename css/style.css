@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  font-size: 16pt;
 }
 
 body {
@@ -8,16 +9,50 @@ body {
 
 .wrapper {
   height: 100%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-header {
   height: 100%;
-  background: url("../res/mobile-tickets-final.jpg") no-repeat center center fixed;
+  background: url("../res/guy.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.main-header .secondary-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.main-header .secondary-container .header-title-container .image .overlay-image {
+  mix-blend-mode: overlay;
+  opacity: 0.82;
+}
+.main-header .header-sub-title {
+  font-family: Arial, Helvetica, sans-serif;
+  mix-blend-mode: soft-light;
+  font-size: 34pt;
+}
+.main-header .header-additional-info p {
+  color: #ffffff;
+  mix-blend-mode: overlay;
+  font-size: 16pt;
+}
+.main-header .ticket-btn button {
+  border: none;
+  background: #5c1819;
+  mix-blend-mode: overlay;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5px 25px 5px 25px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
