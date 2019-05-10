@@ -1,0 +1,34 @@
+html {
+    height: 100%;
+}
+body {
+    // background-color: blue;
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    display: grid;
+
+}
+
+// Start of header
+.main-header {
+    // background: url("../res/mobile-tickets-final.jpg");
+    background: url('../res/mobile-tickets-final.jpg');
+    height: 100%;
+    background-size: cover;
+    .header-title {
+
+    }
+    .header-sub-title {
+
+    }
+    .header-additonal-info {
+
+    }
+    .header-btn {
+
+    }
+}
+// End of header
