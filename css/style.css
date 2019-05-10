@@ -29,6 +29,8 @@ body {
   text-align: center;
 }
 .main-header .secondary-container .header-title-container .image .overlay-image {
+  height: 100%;
+  width: 100%;
   mix-blend-mode: overlay;
   opacity: 0.82;
 }
